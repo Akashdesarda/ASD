@@ -36,7 +36,7 @@ disp(['Output from Social test is:',num2str(outs)])
 outm = evalfis([outv outl outo oute outs],main);
 disp(['Final Score is:',num2str(outm)]);
 
-m = table(v1,v2,l1,l2,o1,o2,o3,e1,e2,e3,s1,s2,s3);
+m = table(v1,v2,outv,l1,l2,outl,o1,o2,o3,outo,e1,e2,e3,oute,s1,s2,s3,outs,outm);
 filename = 'Autism_Test.xlsm'
 writetable(m,filename)
 winopen(filename)
